@@ -1,8 +1,8 @@
-const Factory = artifacts.require("UniswapV2Factory.sol");
+const Factory = artifacts.require("LCswapV2Factory.sol");
 const FUSDT = artifacts.require("FUSDT.sol");
 const FUSDC = artifacts.require("FUSDC.sol");
 const FDAI = artifacts.require("FDAI.sol");
-const WETH = artifacts.require("WETH9.sol");
+const WETH = artifacts.require("WETH.sol");
 
 module.exports = async function (deployer, network, addresses) {
   await deployer.deploy(Factory, addresses[0]);
